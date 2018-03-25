@@ -3,6 +3,7 @@ ReactJS Demo App with webpack, redux, redux-saga
 
 [This project support Storybook for UI development](https://storybook.js.org/)
 
+[Preview the Single Page App on my GitHub](http://syl20lego.github.io/react/index.html)
 ## Start the project
 ```
 yarn
