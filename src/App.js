@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 
+import Home from './Home';
 
 class App extends Component {
 
   render() {
-    const title = 'Setup completed';
-    return (
-        <div>{title}</div>   
-    );
+    <Home/>
   }
 }
 
