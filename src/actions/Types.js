@@ -1,0 +1,1 @@
+export const CHANGE_PROFILE = 'CHANGE_PROFILE';
