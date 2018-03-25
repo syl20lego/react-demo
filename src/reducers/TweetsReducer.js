@@ -1,11 +1,17 @@
-import { CHANGE_PROFILE } from '../actions/Types';
+import { PROFILE_CHANGED } from '../actions/Types';
 
 const defaultState = {
-    profile : {}
+    timeline : null
 };
 
 const reducer = (state = defaultState, action) => {
+    console.log('REDUCER', state, action)
     switch (action.type) {
+        case PROFILE_CHANGED:
+        return {
+            ...state,
+            timeline: action.data
+        }; 
         default:
             return state;
     }

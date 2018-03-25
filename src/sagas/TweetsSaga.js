@@ -5,7 +5,8 @@ import {changeProfile} from '../libs/Twiter';
 
 function* changeProfileEffect(action) {
     try {
-        const response = yield call(changeProfile, action.data.profile);
+        const {data : profile ={}} = action;
+        const response = yield call(changeProfile, profile);
         yield put(ActionCreators.profileChanged(response));
     } catch (e) {
         //Return same value

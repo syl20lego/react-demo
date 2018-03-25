@@ -5,7 +5,6 @@ import rootReducer from '../reducers/RootReducer';
 import rootSagas from '../sagas/RootSagas'
 
 export default () =>{
-    console.log('setup store')
     // middleware that logs actions
     const loggerMiddleware = createLogger({});
     
