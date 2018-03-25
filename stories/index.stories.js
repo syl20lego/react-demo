@@ -10,9 +10,8 @@ import Menu from '../src/components/Menu';
 
 storiesOf('Home', module)
   .add('Loading', () => <Home timeline={null} onClick={action('clicked')}/>)
-  .add('Git Hub', () => <Home timeline={{name: 'Git Hub', profile: 'github'}} onClick={action('clicked')}/>)
+  .add('Git Hub', () => <Home timeline={{ name: 'Git Hub', profile: 'github' }} onClick={action('clicked')}/>);
 storiesOf('Tweets', module)
-  .add('Git Hub', () => <Tweet profile='github'/>)
+  .add('Git Hub', () => <Tweet profile='github'/>);
 storiesOf('Menu', module)
-  .add('Loading', () => <Menu timeline={{}} onClick={action('clicked')}/>)
-  .add('Text', () => <Menu timeline={{name: 'Text'}} onClick={action('clicked')}/>)
+  .add('Text', () => <Menu timeline={{ name: 'Text' }} onClick={action('clicked')}/>);

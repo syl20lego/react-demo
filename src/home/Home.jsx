@@ -6,8 +6,12 @@ import './Home.css';
 export default (props) => {
   return (
         <div className="home">
-            <Menu timeline={props.timeline} onClick={props.onClick}/>
-            {props.timeline ? <Tweets profile={props.timeline.profile}/> : 'Loading'}
+            {props.timeline ?
+              <div>
+                <Menu timeline={props.timeline} onClick={props.onClick}/>
+                <Tweets profile={props.timeline.profile}/>
+              </div>
+            : 'Loading'}
         </div>
   );
 };
