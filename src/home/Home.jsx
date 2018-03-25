@@ -4,10 +4,10 @@ import Tweets from '../components/Tweets';
 import './Home.css';
 
 export default (props) => {
-    return (
+  return (
         <div className="home">
             <Menu timeline={props.timeline} onClick={props.onClick}/>
-            {props.timeline?<Tweets profile={props.timeline.profile}/>:'Loading'}
-        </div>   
-    );
-}
+            {props.timeline ? <Tweets profile={props.timeline.profile}/> : 'Loading'}
+        </div>
+  );
+};

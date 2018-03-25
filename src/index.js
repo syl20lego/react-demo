@@ -1,10 +1,12 @@
+/* eslint-disable import/no-unresolved,import/extensions,no-undef */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
 ReactDOM.render(
   <App/>,
-  document.getElementById('app')
+  document.getElementById('app'),
 );
 
 module.hot.accept();
+/* eslint-disable */

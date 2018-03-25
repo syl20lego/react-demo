@@ -1,0 +1,14 @@
+{
+    "parser": "babel-eslint",
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "no-unused-vars": 0,
+        "arrow-body-style": 0,
+        "no-path-concat": 0,
+        "prefer-template": 0,
+        "import/prefer-default-export": 0
+    },
+    "extends": ["airbnb-base"]
+}

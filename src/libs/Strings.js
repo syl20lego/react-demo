@@ -1,12 +1,12 @@
 import LocalizedStrings from 'react-localization';
 
 export const strings = {
-  en:{
-    next:'Next'
+  en: {
+    next: 'Next',
   },
   fr: {
-    next:'Prochain'
-  }
- }
+    next: 'Prochain',
+  },
+};
 
 export default new LocalizedStrings(strings);
