@@ -29,9 +29,6 @@ yarn test
 npm test
 ```
 ```
-yarn run storybook
-```
-```
 jest
 ```
 
