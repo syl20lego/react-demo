@@ -3,11 +3,13 @@ import { Timeline } from 'react-twitter-widgets'
 
 export default (props) => {
     return (
-        <Timeline
-            dataSource={{
-                sourceType: 'profile',
-                screenName: props.profile
-            }}
+        <div className="Twitter">
+            <Timeline
+                dataSource={{
+                    sourceType: 'profile',
+                    screenName: props.profile
+                }}
             />
+        </div>
     );
 }

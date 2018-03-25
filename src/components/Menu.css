@@ -1,0 +1,20 @@
+.menu {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    background-color: lightskyblue;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.menuText {
+    padding-top:15px;
+}
+.button {
+    padding: 12px 35px 12px 35px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #B7B7B7;
+    color: #FFF;
+}

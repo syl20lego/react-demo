@@ -19,6 +19,16 @@
       "stage-2"
     ]
   },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-localization": "^1.0.5",
+    "react-redux": "^5.0.7",
+    "react-twitter-widgets": "^1.7.1",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.16.0"
+  },
   "devDependencies": {
     "@storybook/addon-actions": "^3.3.15",
     "@storybook/addon-links": "^3.3.15",
@@ -30,6 +40,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.11",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^22.4.3",
@@ -40,14 +51,11 @@
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.4.1"
   },
-  "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-localization": "^1.0.5",
-    "react-redux": "^5.0.7",
-    "react-twitter-widgets": "^1.7.1",
-    "redux": "^3.7.2",
-    "redux-logger": "^3.0.6",
-    "redux-saga": "^0.16.0"
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+        "<rootDir>/test/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/test/styleMock.js"
+    }
   }
 }
