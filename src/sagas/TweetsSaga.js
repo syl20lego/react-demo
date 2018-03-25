@@ -3,7 +3,7 @@ import {ActionCreators} from '../actions/ActionCreators';
 import {CHANGE_PROFILE} from '../actions/Types';
 import {changeProfile} from '../libs/Twiter';
 
-function* changeProfile(action) {
+function* changeProfileEffect(action) {
     try {
         const response = yield call(changeProfile, action.data.profile);
         yield put(ActionCreators.profileChanged(response));
@@ -14,7 +14,7 @@ function* changeProfile(action) {
 }
 
 function* changeProfileSaga() {
-    yield takeEvery(CHANGE_PROFILE, changeProfile);
+    yield takeEvery(CHANGE_PROFILE, changeProfileEffect);
 }
 
 export default [changeProfileSaga];
