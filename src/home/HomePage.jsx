@@ -14,7 +14,7 @@ class HomePage extends Component {
     render() {
         console.log('HOMEPAGE',this.props.timeline)
         return (
-            <Home timeline={this.props.timeline} />
+            <Home timeline={this.props.timeline} onClick={this.props.changeProfile}/>
         )
     }
 }

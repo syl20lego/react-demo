@@ -7,3 +7,4 @@ https://webpack.js.org/
 https://storybook.js.org/
 https://facebook.github.io/jest/
 https://github.com/andrewsuzuki/react-twitter-widgets
+https://github.com/stefalda/react-localization

@@ -4683,6 +4683,10 @@ loader-utils@^1.0.2, loader-utils@^1.1.0:
     emojis-list "^2.0.0"
     json5 "^0.5.0"
 
+localized-strings@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/localized-strings/-/localized-strings-0.0.8.tgz#1a9abc7f6ba595d5175c5c5c868251850ed6d4df"
+
 locate-path@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/locate-path/-/locate-path-2.0.0.tgz#2b568b265eec944c6d9c0de9c3dbbbca0354cd8e"
@@ -6183,6 +6187,13 @@ react-inspector@^2.2.2:
     babel-runtime "^6.26.0"
     is-dom "^1.0.9"
 
+react-localization@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/react-localization/-/react-localization-1.0.5.tgz#280ed19510a08da5ec486649b54bc439f45a2459"
+  dependencies:
+    localized-strings "^0.0.8"
+    react "^16.0.0"
+
 react-modal@^3.1.10:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/react-modal/-/react-modal-3.3.2.tgz#b13da9490653a7c76bc0e9600323eb1079c620e7"
@@ -6263,7 +6274,7 @@ react-twitter-widgets@^1.7.1:
     prop-types "^15.3.0"
     scriptjs "^2.5.8"
 
-react@^16.2.0:
+react@^16.0.0, react@^16.2.0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.2.0.tgz#a31bd2dab89bff65d42134fa187f24d054c273ba"
   dependencies:

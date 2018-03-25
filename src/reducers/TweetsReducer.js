@@ -5,7 +5,6 @@ const defaultState = {
 };
 
 const reducer = (state = defaultState, action) => {
-    console.log('REDUCER', state, action)
     switch (action.type) {
         case PROFILE_CHANGED:
         return {

@@ -8,7 +8,6 @@ const tweetProfiles = [
     }];
 
 export const changeProfile = (profile) => {
-    console.log('CHANGING PROFILE')
     // const current = tweetProfiles.filter((element) => element.profile === profile).reduce((prev, current) => current,[]);
     const [current] = tweetProfiles.filter((element) => element.profile === profile);
     // return next element or roll over
