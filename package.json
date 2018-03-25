@@ -1,5 +1,5 @@
 {
-  "name": "minimal-react-boilerplate",
+  "name": "react-demo",
   "version": "1.0.0",
   "description": "ReactJS Demo App with webpack, redux, redux-saga with storybook",
   "main": "index.js",
@@ -10,8 +10,8 @@
     "build-storybook": "build-storybook"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Sylvain Legault",
+  "license": "MIT",
   "babel": {
     "presets": [
       "env",

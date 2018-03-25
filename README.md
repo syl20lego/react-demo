@@ -1,6 +1,8 @@
 # react-demo
 ReactJS Demo App with webpack, redux, redux-saga
 
+[This project support Storybook for UI development](https://storybook.js.org/)
+
 ## Start the project
 ```
 yarn
@@ -36,6 +38,14 @@ jest
 # 3rd Party
 
 https://webpack.js.org/
+
+https://redux.js.org/
+
+https://github.com/reactjs/react-redux
+
+https://redux-saga.js.org/
+
+https://github.com/redux-saga/redux-saga
 
 https://storybook.js.org/
 
