@@ -5,7 +5,9 @@ import Home from './Home';
 class App extends Component {
 
   render() {
-    <Home/>
+    return (
+      <Home/>
+    );
   }
 }
 
