@@ -6,6 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js",
     "test": "jest",
+    "eslint": "eslint src",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "prod": "webpack --progress -p"
