@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Menu from '../components/Menu';
 import Tweets from '../components/Tweets';
 import './Home.css';
 
-export default (props) => {
+const Home = (props) => {
   return (
         <div className="home">
             {props.timeline ?
@@ -15,3 +16,10 @@ export default (props) => {
         </div>
   );
 };
+
+Home.propTypes = {
+  timeline: PropTypes.object,
+  onClick: PropTypes.func,
+};
+
+export default Home;

@@ -1,4 +1,4 @@
-import { put, call, takeEvery } from 'redux-saga/effects';
+import { put, call, takeLatest, throttle } from 'redux-saga/effects';
 import { ActionCreators } from '../actions/ActionCreators';
 import { CHANGE_PROFILE } from '../actions/Types';
 import { changeProfile } from '../libs/Twiter';
@@ -15,7 +15,7 @@ function* changeProfileEffect(action) {
 }
 
 function* changeProfileSaga() {
-  yield takeEvery(CHANGE_PROFILE, changeProfileEffect);
+  yield throttle(1000, CHANGE_PROFILE, changeProfileEffect);
 }
 
 export default [changeProfileSaga];

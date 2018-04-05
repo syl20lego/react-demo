@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Strings from '../libs/Strings';
 import './Menu.css';
 
-export default (props) => {
+const Menu = (props) => {
   return (
         <div className="menu">
             <div className="menuText">
@@ -16,3 +17,10 @@ export default (props) => {
         </div>
   );
 };
+
+Menu.propTypes = {
+  timeline: PropTypes.object,
+  onClick: PropTypes.func,
+};
+
+export default Menu;

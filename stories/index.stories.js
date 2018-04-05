@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
@@ -15,3 +16,4 @@ storiesOf('Tweets', module)
   .add('Git Hub', () => <Tweet profile='github'/>);
 storiesOf('Menu', module)
   .add('Text', () => <Menu timeline={{ name: 'Text' }} onClick={action('clicked')}/>);
+/* eslint-disable */
