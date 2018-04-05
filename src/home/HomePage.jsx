@@ -19,7 +19,8 @@ class HomePage extends Component {
 
 HomePage.propTypes = {
   timeline: PropTypes.object,
-}
+  changeProfile: PropTypes.func,
+};
 
 const mapStateToProps = (state) => {
   return {

@@ -6,6 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js",
     "test": "jest",
+    "eslint": "eslint src",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "prod": "webpack --progress -p"
@@ -21,9 +22,11 @@
     ]
   },
   "dependencies": {
+    "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-localization": "^1.0.5",
+    "react-native-vector-icons": "^4.6.0",
     "react-redux": "^5.0.7",
     "react-twitter-widgets": "^1.7.1",
     "redux": "^3.7.2",
@@ -49,6 +52,7 @@
     "eslint-config-airbnb": "^16.1.0",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jest": "^21.15.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
     "jest": "^22.4.3",
@@ -60,6 +64,9 @@
     "webpack-dev-server": "^2.4.1"
   },
   "jest": {
+    "setupFiles": [
+      "./test/jest.js"
+    ],
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/fileMock.js",
       "\\.(css|less)$": "<rootDir>/test/styleMock.js"

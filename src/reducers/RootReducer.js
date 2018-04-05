@@ -1,5 +1,5 @@
-import TweetsReducer from './TweetsReducer';
+import tweets from './TweetsReducer';
 
 export default {
-  tweets: TweetsReducer,
+  tweets,
 };
