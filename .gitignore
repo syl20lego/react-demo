@@ -59,3 +59,6 @@ typings/
 
 # production file
 bundle.js
+
+# Jetbrains
+.idea
