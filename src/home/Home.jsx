@@ -4,13 +4,13 @@ import Menu from '../components/Menu';
 import Tweets from '../components/Tweets';
 import './Home.css';
 
-const Home = (props) => {
+const Home = ({ onClick, timeline }) => {
   return (
         <div className="home">
-            {props.timeline ?
+            {timeline ?
               <div>
-                <Menu timeline={props.timeline} onClick={props.onClick}/>
-                <Tweets profile={props.timeline.profile}/>
+                <Menu timeline={timeline} onClick={onClick}/>
+                <Tweets profile={timeline.profile}/>
               </div>
             : 'Loading'}
         </div>
@@ -18,7 +18,9 @@ const Home = (props) => {
 };
 
 Home.propTypes = {
-  timeline: PropTypes.object,
+  timeline: PropTypes.shape({
+    profile: PropTypes.string,
+  }),
   onClick: PropTypes.func,
 };
 

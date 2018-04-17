@@ -10,10 +10,11 @@ import Tweet from '../src/components/Tweets';
 import Menu from '../src/components/Menu';
 
 storiesOf('Home', module)
-  .add('Loading', () => <Home timeline={null} onClick={action('clicked')}/>)
+  .add('Loading', () => <Home />)
   .add('Git Hub', () => <Home timeline={{ name: 'Git Hub', profile: 'github' }} onClick={action('clicked')}/>);
 storiesOf('Tweets', module)
   .add('Git Hub', () => <Tweet profile='github'/>);
 storiesOf('Menu', module)
-  .add('Text', () => <Menu timeline={{ name: 'Text' }} onClick={action('clicked')}/>);
+  .add('Default', () => <Menu />)
+  .add('Text & click', () => <Menu timeline={{ name: 'Text', profile: 'Tester' }} onClick={action('clicked')}/>);
 /* eslint-disable */

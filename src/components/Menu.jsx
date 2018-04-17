@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 import Strings from '../libs/Strings';
 import './Menu.css';
 
-const Menu = (props) => {
+const Menu = ({ onClick, timeline: { name, profile } = {} }) => {
   return (
         <div className="menu">
             <div className="menuText">
-                {props.timeline && props.timeline.name}
+                {name}
             </div>
             <div>
-                <button className="button" onClick={() => props.onClick(props.timeline.profile)}>
+                <button className="button" onClick={() => onClick(profile)}>
                     {Strings.next}
                 </button>
             </div>
@@ -19,7 +19,10 @@ const Menu = (props) => {
 };
 
 Menu.propTypes = {
-  timeline: PropTypes.object,
+  timeline: PropTypes.shape({
+    name: PropTypes.string,
+    profile: PropTypes.string,
+  }),
   onClick: PropTypes.func,
 };
 
